@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <i class="fas fa-tasks"></i>
+                <h1>Task Tracker</h1>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <a href="register.html" class="btn btn-secondary"><i class="fas fa-user-plus"></i> Register</a>
+            </div>
+        </header>
+
+        <div class="user-profile">
+            <div class="profile-card">
+                <i class="fas fa-user-circle"></i>
+                <div id="userData">
+                    <h3 id="userName"></h3>
+                    <p id="userEmail"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="task-form">
+            <h2><i class="fas fa-plus-circle"></i> Add New Task</h2>
+            <form id="taskForm">
+                <div class="form-group">
+                    <i class="fas fa-heading"></i>
+                    <input type="text" id="taskTitle" placeholder="Task Title" maxlength="25" required>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-align-left"></i>
+                    <textarea id="taskDescription" placeholder="Task Description" maxlength="50" required></textarea>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-flag"></i>
+                    <select id="taskPriority" required>
+                        <option value="">Select Priority</option>
+                        <option value="1">Low</option>
+                        <option value="2">Medium</option>
+                        <option value="3">High</option>
+                        <option value="4">Urgent</option>
+                        <option value="5">Critical</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success"><i class="fas fa-plus"></i> Add Task</button>
+            </form>
+        </div>
+
+        <div class="tasks-container">
+            <h2><i class="fas fa-list"></i> Your Tasks</h2>
+            <div id="tasksList"></div>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

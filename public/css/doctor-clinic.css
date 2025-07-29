@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #3498db; /* Medical blue */
+    --secondary-color: #2ecc71; /* Healing green */
+    --accent-color: #9b59b6; /* Soft purple for accents */
+    --light-color: #ecf0f1;
+    --dark-color: #34495e;
+    --text-color: #2c3e50;
+    --danger-color: #e74c3c;
+    --warning-color: #f39c12;
+    --success-color: #27ae60;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Nunito', 'Segoe UI', sans-serif;
+    background-color: #f8fafc;
+    color: var(--text-color);
+}
+
+/* Main layout styling */
+.min-h-screen {
+    background-color: #f0f5fa !important; /* Light blue tint background */
+}
+
+/* Navigation bar styling */
+nav.bg-white {
+    background-color: white !important;
+    border-bottom: 3px solid var(--primary-color) !important;
+}
+
+/* Logo area */
+.application-logo svg path {
+    fill: var(--primary-color) !important;
+}
+
+/* Navigation links */
+.nav-link, .dropdown-link {
+    color: var(--dark-color) !important;
+    transition: var(--transition);
+}
+
+.nav-link:hover, .dropdown-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-link.active {
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Header styling */
+header.bg-white {
+    background: linear-gradient(to right, #ffffff, #f0f7ff) !important;
+    border-bottom: 1px solid rgba(52, 152, 219, 0.2);
+}
+
+/* Card styling */
+.bg-white.shadow-sm {
+    border-top: 4px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow) !important;
+}
+
+/* Buttons */
+.primary-button {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.secondary-button {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+}
+
+.danger-button {
+    background-color: var(--danger-color) !important;
+    border-color: var(--danger-color) !important;
+}
+
+/* Dashboard specific styling */
+.dashboard-card {
+    transition: var(--transition);
+    border-left: 4px solid var(--primary-color);
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Medical icons and elements */
+.medical-icon {
+    color: var(--primary-color);
+}
+
+/* Form elements */
+input, select, textarea {
+    border-radius: var(--border-radius) !important;
+    border: 1px solid #cbd5e0 !important;
+    padding: 0.5rem 1rem !important;
+    transition: var(--transition);
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25) !important;
+}
+
+/* Welcome page specific styling */
+.welcome-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 3rem 0;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+}
+
+.feature-card {
+    border-radius: var(--border-radius);
+    border-top: 3px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
